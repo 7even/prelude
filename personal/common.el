@@ -15,3 +15,8 @@
 (global-set-key (kbd "s-7") (kbd "s-w 7"))
 (global-set-key (kbd "s-8") (kbd "s-w 8"))
 (global-set-key (kbd "s-9") (kbd "s-w 9"))
+
+;; set the cursor to a blinking bar
+(setq-default cursor-type (quote bar))
+(blink-cursor-mode)
+(setq blink-cursor-blinks 0)
