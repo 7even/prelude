@@ -5,7 +5,7 @@
 
 ;; tell ace-window to dispatch even with 1 or 2 windows
 (setq aw-dispatch-always 't)
-;; and add binding for quick switching between windows
+;; and add some bindings for quick switching between windows
 (global-set-key (kbd "s-1") (kbd "s-w 1"))
 (global-set-key (kbd "s-2") (kbd "s-w 2"))
 (global-set-key (kbd "s-3") (kbd "s-w 3"))
