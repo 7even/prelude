@@ -1,4 +1,4 @@
 (prelude-require-package 'solarized-theme)
 
 (mac-auto-operator-composition-mode)
-(set-frame-font "Fira Code 14" nil t)
+(set-frame-font "Fira Code 14")
