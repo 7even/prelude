@@ -20,3 +20,6 @@
 (setq-default cursor-type (quote bar))
 (blink-cursor-mode)
 (setq blink-cursor-blinks 0)
+
+;; bind s-d to avy command
+(global-set-key (kbd "s-d") 'avy-goto-word-1)
