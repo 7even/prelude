@@ -8,3 +8,11 @@
   (cljr-add-keybindings-with-prefix "C-c C-m"))
 
 (add-hook 'clojure-mode-hook #'my-clojure-mode-hook)
+
+;; use sane indentation for re-frame subscriptions, event handlers and effects
+(define-clojure-indent
+  (rf/reg-sub 1)
+  (rf/reg-event-db 1)
+  (rf/reg-event-fx 1)
+  (rf/reg-fx 1)
+  (rf/reg-cofx 1))
