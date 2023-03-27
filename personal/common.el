@@ -30,3 +30,13 @@
 
 ;; disable whitespace-mode
 (setq prelude-whitespace nil)
+
+;; add some bindings for multiple-cursors
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-M->") 'mc/skip-to-next-like-this)
+(global-set-key (kbd "C-c C->") 'mc/unmark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-M-<") 'mc/skip-to-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/unmark-previous-like-this)
+;; and set its config location in a version controlled directory
+(setq mc/list-file (locate-user-emacs-file "personal/.mc-lists.el"))
