@@ -23,3 +23,10 @@
 
 ;; bind s-d to avy command
 (global-set-key (kbd "s-d") 'avy-goto-word-1)
+
+;; kill current buffer on s-q and revert it on s-u
+(global-set-key (kbd "s-q") 'kill-current-buffer)
+(global-set-key (kbd "s-u") 'revert-buffer-quick)
+
+;; disable whitespace-mode
+(setq prelude-whitespace nil)
