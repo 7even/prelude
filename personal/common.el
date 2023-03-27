@@ -28,8 +28,9 @@
 (global-set-key (kbd "s-q") 'kill-current-buffer)
 (global-set-key (kbd "s-u") 'revert-buffer-quick)
 
-;; disable whitespace-mode
+;; disable whitespace-mode and flyspell
 (setq prelude-whitespace nil)
+(setq prelude-flyspell nil)
 
 ;; add some bindings for multiple-cursors
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
@@ -40,3 +41,8 @@
 (global-set-key (kbd "C-c C-<") 'mc/unmark-previous-like-this)
 ;; and set its config location in a version controlled directory
 (setq mc/list-file (locate-user-emacs-file "personal/.mc-lists.el"))
+
+;; use a smarter newline function by default
+(global-set-key (kbd "C-m") 'comment-indent-new-line)
+;; and add a binding to comment whole current line
+(global-set-key (kbd "C-;") 'comment-line)
