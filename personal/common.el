@@ -46,3 +46,8 @@
 (global-set-key (kbd "C-m") 'comment-indent-new-line)
 ;; and add a binding to comment whole current line
 (global-set-key (kbd "C-;") 'comment-line)
+
+;; add shrink-whitespace along with some bindings
+(prelude-require-package 'shrink-whitespace)
+(global-set-key (kbd "M-\\") 'shrink-whitespace)
+(global-set-key (kbd "C-M-\\") 'grow-whitespace-around)
