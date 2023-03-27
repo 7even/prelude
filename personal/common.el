@@ -51,3 +51,7 @@
 (prelude-require-package 'shrink-whitespace)
 (global-set-key (kbd "M-\\") 'shrink-whitespace)
 (global-set-key (kbd "C-M-\\") 'grow-whitespace-around)
+
+;; prefer horizontal window splits
+(setq split-height-threshold nil)
+(setq split-width-threshold 200)
