@@ -17,3 +17,6 @@
      (rf/reg-event-fx 1)
      (rf/reg-fx 1)
      (rf/reg-cofx 1)))
+
+;; auto run tests after loading the buffer
+(cider-auto-test-mode 1)
