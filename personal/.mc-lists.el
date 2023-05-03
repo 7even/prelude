@@ -9,10 +9,12 @@
         sp-backward-barf-sexp
         sp-backward-down-sexp
         sp-backward-sexp
+        sp-backward-slurp-sexp
         sp-backward-up-sexp
         sp-down-sexp
         sp-forward-barf-sexp
         sp-forward-sexp
+        sp-forward-slurp-sexp
         sp-join-sexp
         sp-splice-sexp
         sp-splice-sexp-killing-around
