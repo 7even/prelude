@@ -3,19 +3,24 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        cljr-slash
         crux-move-beginning-of-line
         delete-horizontal-space
         indent-for-tab-command
         sp-backward-barf-sexp
+        sp-backward-delete-char
         sp-backward-down-sexp
+        sp-backward-kill-word
         sp-backward-sexp
         sp-backward-slurp-sexp
         sp-backward-up-sexp
+        sp-delete-char
         sp-down-sexp
         sp-forward-barf-sexp
         sp-forward-sexp
         sp-forward-slurp-sexp
         sp-join-sexp
+        sp-kill-word
         sp-splice-sexp
         sp-splice-sexp-killing-around
         sp-splice-sexp-killing-backward
