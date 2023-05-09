@@ -55,3 +55,7 @@
 ;; prefer horizontal window splits
 (setq split-height-threshold nil)
 (setq split-width-threshold 200)
+
+;; add direnv-mode and enable it globally
+(prelude-require-package 'direnv)
+(direnv-mode)
