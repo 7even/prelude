@@ -44,6 +44,11 @@
 
 ;; use a smarter newline function by default
 (global-set-key (kbd "C-m") 'comment-indent-new-line)
+(global-set-key (kbd "M-j") 'comment-indent-new-line)
+;; disable M-j in smartparens so it doesn't shadow M-j from global keymap
+(add-hook 'smartparens-mode-hook
+          (lambda ()
+            (define-key smartparens-mode-map (kbd "M-j") nil)))
 ;; and add a binding to comment whole current line
 (global-set-key (kbd "C-;") 'comment-line)
 
