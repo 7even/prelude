@@ -20,3 +20,7 @@
 
 ;; auto run tests after loading the buffer
 (cider-auto-test-mode 1)
+
+;; set a common path to store all REPL history
+(setq cider-repl-history-file
+      (locate-user-emacs-file "personal/cider-history"))
