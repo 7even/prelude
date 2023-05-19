@@ -3,7 +3,12 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        cider-repl-tab
         cljr-slash
+        clojure-convert-collection-to-list
+        clojure-convert-collection-to-map
+        clojure-convert-collection-to-set
+        clojure-convert-collection-to-vector
         crux-move-beginning-of-line
         delete-horizontal-space
         indent-for-tab-command
