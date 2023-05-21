@@ -7,6 +7,9 @@
   ;; This choice of keybinding leaves cider-macroexpand-1 unbound
   (cljr-add-keybindings-with-prefix "C-c C-m"))
 
+;; don't insert newline after :require & :import in ns declaration
+(setq cljr-insert-newline-after-require nil)
+
 (add-hook 'clojure-mode-hook #'my-clojure-mode-hook)
 
 ;; use sane indentation for re-frame subscriptions, event handlers and effects
