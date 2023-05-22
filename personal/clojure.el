@@ -27,3 +27,13 @@
 ;; set a common path to store all REPL history
 (setq cider-repl-history-file
       (locate-user-emacs-file "personal/cider-history"))
+
+;; add a function to call (user/reset) via cider
+(defun cider-reset ()
+  (interactive)
+  (cider-interactive-eval (format "(user/reset)")))
+
+;; and bind it to C-c C-x
+(add-hook 'cider-mode-hook
+          (lambda ()
+            (define-key clojure-mode-map (kbd "C-c C-x") 'cider-reset)))
