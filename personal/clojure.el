@@ -37,3 +37,6 @@
 (add-hook 'cider-mode-hook
           (lambda ()
             (define-key clojure-mode-map (kbd "C-c C-x") 'cider-reset)))
+
+;; rebind the jack-in command (previously bound to C-c C-x prefix)
+(define-key clojure-mode-map (kbd "C-c C-M-j") 'cider-jack-in-clj&cljs)
