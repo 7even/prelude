@@ -64,3 +64,9 @@
 ;; add direnv-mode and enable it globally
 (prelude-require-package 'direnv)
 (direnv-mode)
+
+;; highlight characters after 96th column to enforce maximum line length
+(require 'whitespace)
+(setq whitespace-line-column 96)
+(setq whitespace-style '(face lines-tail))
+(global-whitespace-mode +1)
