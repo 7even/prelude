@@ -13,8 +13,8 @@
   (transient-append-suffix 'magit-pull "p" '("F" magit-pull-from-pushremote))
   (transient-remove-suffix 'magit-pull "p")
 
-  (transient-append-suffix 'magit-rebase "p" '("r" magit-rebase-onto-pushremote))
-  (transient-remove-suffix 'magit-rebase "p")
+  (transient-append-suffix 'magit-rebase "e" '("r" magit-rebase-branch))
+  (transient-remove-suffix 'magit-rebase "e")
 
   (transient-append-suffix 'magit-push "p" '("P" magit-push-current-to-pushremote))
   (transient-remove-suffix 'magit-push "p"))
