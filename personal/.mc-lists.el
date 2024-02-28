@@ -9,9 +9,12 @@
         clojure-convert-collection-to-map
         clojure-convert-collection-to-set
         clojure-convert-collection-to-vector
+        comment-indent-new-line
         crux-move-beginning-of-line
         delete-horizontal-space
+        easy-kill
         indent-for-tab-command
+        shrink-whitespace
         sp-backward-barf-sexp
         sp-backward-delete-char
         sp-backward-down-sexp
@@ -25,6 +28,8 @@
         sp-forward-sexp
         sp-forward-slurp-sexp
         sp-join-sexp
+        sp-kill-hybrid-sexp
+        sp-kill-region
         sp-kill-word
         sp-splice-sexp
         sp-splice-sexp-killing-around
@@ -35,12 +40,14 @@
         sp-wrap-round
         transpose-sexps
         transpose-words
+        yaml-electric-backspace
         ))
 
 (setq mc/cmds-to-run-once
       '(
         ace-window
         beginning-of-buffer
+        cider-load-buffer
         describe-key
         end-of-buffer
         helm-confirm-and-exit-minibuffer
