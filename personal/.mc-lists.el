@@ -14,6 +14,8 @@
         delete-horizontal-space
         easy-kill
         indent-for-tab-command
+        org-delete-char
+        org-self-insert-command
         shrink-whitespace
         sp-backward-barf-sexp
         sp-backward-delete-char
@@ -46,6 +48,7 @@
 (setq mc/cmds-to-run-once
       '(
         ace-window
+        avy-goto-word-1
         beginning-of-buffer
         cider-load-buffer
         describe-key
