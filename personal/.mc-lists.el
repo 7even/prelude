@@ -13,6 +13,7 @@
         crux-move-beginning-of-line
         delete-horizontal-space
         easy-kill
+        forward-sexp
         indent-for-tab-command
         org-delete-char
         org-self-insert-command
@@ -56,5 +57,6 @@
         helm-confirm-and-exit-minibuffer
         helm-projectile-find-file
         helm-show-kill-ring
+        markdown-outdent-or-delete
         scroll-other-window
         ))
