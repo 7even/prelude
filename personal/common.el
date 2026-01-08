@@ -70,3 +70,6 @@
 (setq whitespace-line-column 96)
 (setq whitespace-style '(face lines-tail))
 (global-whitespace-mode +1)
+
+;; add agent-shell for interacting with LLM agents in Emacs
+(prelude-require-package 'agent-shell)
